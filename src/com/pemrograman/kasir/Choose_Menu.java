@@ -30,11 +30,7 @@ public class Choose_Menu extends JFrame {
         JButton1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         JButton1.setText("Nasi Goreng");
         JButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        JButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-            jButton1ActionPerformed(evt);
-            }
-       });
+        JButton1.addActionListener(evt -> jButton1ActionPerformed(evt));
 
         JButton2.setFont(new Font("Segoe UI", 1, 24)); // NOI18N
         JButton2.setText("Sate Ayam");
