@@ -27,7 +27,7 @@ public class Choose_Menu extends JFrame {
         JLabel1.setFont(JLabel1.getFont().deriveFont(JLabel1.getFont().getStyle() | java.awt.Font.BOLD, JLabel1.getFont().getSize()+28));
 
         // Ubah Button Nasi Goreng
-        JButton1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        JButton1.setFont(new java.awt.Font("Segoe UI", Font.BOLD, 24)); // NOI18N
         JButton1.setText("Nasi Goreng");
         JButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         JButton1.addActionListener(evt -> jButton1ActionPerformed(evt));
