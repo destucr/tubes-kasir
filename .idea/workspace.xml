@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aefd7bd-ce33-4dfd-81a7-0fb80e307095" name="Changes" comment="">
+    <list default="true" id="1aefd7bd-ce33-4dfd-81a7-0fb80e307095" name="Changes" comment="Merapikan Class &amp; Menghapus Comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/Choose_Menu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/Choose_Menu.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/Choose_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/Choose_Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/add_count.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/add_count.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/add_count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/add_count.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/detail_order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/detail_order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/order_center.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/order_center.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/payment.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/payment.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/query_order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/query_order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +93,7 @@
       <workItem from="1673522366681" duration="319000" />
       <workItem from="1673524192295" duration="1709000" />
       <workItem from="1674092283725" duration="7703000" />
-      <workItem from="1674135867295" duration="5127000" />
+      <workItem from="1674135867295" duration="6434000" />
     </task>
     <task id="LOCAL-00001" summary="Pemrog Mantap">
       <created>1674134547369</created>
@@ -122,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674135228077</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merapikan Class &amp; Menghapus Comment">
+      <created>1674141089227</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674141089227</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pemrog Mantap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pemrog Mantap" />
+    <MESSAGE value="Merapikan Class &amp; Menghapus Comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merapikan Class &amp; Menghapus Comment" />
   </component>
 </project>
