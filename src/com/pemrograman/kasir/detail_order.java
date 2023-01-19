@@ -1,6 +1,9 @@
 package com.pemrograman.kasir;
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class detail_order extends JFrame {
     private JPanel JPanel1;
@@ -22,11 +25,11 @@ public class detail_order extends JFrame {
     public void detail_order_init(){
         this.setContentPane(JPanel1);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(700,500);
+        this.setSize(500,500);
 
-        JPanel1.setBackground(new java.awt.Color(153, 153, 0));
+        JPanel1.setBackground(new Color(215, 215, 215));
 
-        JLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        JLabel1.setFont(new Font("Segoe UI", 1, 18));
         JLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLabel1.setText("Daftar Pesanan");
 
@@ -35,33 +38,34 @@ public class detail_order extends JFrame {
         txt_list.setEnabled(false);
         JScrollPane1.setViewportView(txt_list);
 
-        btnLanjut.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnLanjut.setFont(new Font("Segoe UI", 0, 14));
         btnLanjut.setText("Lanjutkan");
-        btnLanjut.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnLanjut.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 btnLanjutActionPerformed(evt);
             }
         });
 
-        JButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        JButton2.setFont(new java.awt.Font("Segoe UI", 0, 14));
         JButton2.setText("Kembali");
-        JButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        JButton2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
     }
 
-    private void btnLanjutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLanjutActionPerformed
+    // ================ Method Action ============================
+    private void btnLanjutActionPerformed(ActionEvent evt) {
         payment p = new payment(qOrder.totalPayment());
         p.setVisible(true);
         dispose();
-    }//GEN-LAST:event_btnLanjutActionPerformed
+    }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(ActionEvent evt) {
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }
 
     public static void main(String[] args) {
         JFrame mainFrame = new detail_order();

@@ -38,7 +38,9 @@
       </component>
       <component id="cf5da" class="javax.swing.JLabel" binding="txt_totalpayment">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="299" height="20"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -46,7 +48,9 @@
       </component>
       <component id="dc009" class="javax.swing.JLabel" binding="txt_ppn">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="299" height="20"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -54,7 +58,9 @@
       </component>
       <component id="fe2e8" class="javax.swing.JLabel" binding="txt_payment">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="299" height="20"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Label"/>
@@ -73,7 +79,7 @@
       <component id="68f6b" class="javax.swing.JTextField" binding="txt_pay">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
+            <preferred-size width="299" height="30"/>
           </grid>
         </constraints>
         <properties/>
@@ -100,7 +106,9 @@
       </component>
       <component id="e5c01" class="javax.swing.JButton" binding="jButton1">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="299" height="30"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Selesai"/>
@@ -118,7 +126,9 @@
       </component>
       <component id="7eede" class="javax.swing.JLabel" binding="txt_change">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="299" height="20"/>
+          </grid>
         </constraints>
         <properties>
           <text value="Label"/>

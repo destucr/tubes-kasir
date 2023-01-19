@@ -1,6 +1,11 @@
 package com.pemrograman.kasir;
 
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class payment extends JFrame {
     private JTextField txt_pay;
@@ -24,9 +29,7 @@ public class payment extends JFrame {
     validation v = new validDigit();
     useFilter uFilter = new useFilter(v);
 
-    /**
-     * Creates new form payment
-     */
+
     public payment(int price) {
         payment_init();
         total = price;
@@ -39,79 +42,68 @@ public class payment extends JFrame {
     public void payment_init() {
         this.setContentPane(jPanel1);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(700, 500);
-        jPanel1.setBackground(new java.awt.Color(0, 153, 102));
+        this.setSize(500, 500);
+        //jPanel1.setBackground(new Color(0, 153, 102));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setFont(new Font("Tahoma", 1, 18));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Pembayaran");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new Font("Tahoma", 0, 14));
         jLabel2.setText("Total Pesanan ");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setFont(new Font("Tahoma", 0, 14));
         jLabel3.setText("PPN");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setFont(new Font("Tahoma", 0, 14));
         jLabel4.setText("Total");
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setFont(new Font("Tahoma", 0, 14));
         jLabel5.setText("Pembayaran");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setFont(new Font("Tahoma", 0, 14));
         jLabel6.setText("Kembalian");
 
-        txt_totalpayment.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt_totalpayment.setFont(new Font("Tahoma", 0, 14));
         txt_totalpayment.setText("jLabel7");
 
-        txt_ppn.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt_ppn.setFont(new Font("Tahoma", 0, 14));
         txt_ppn.setText("jLabel8");
 
-        txt_payment.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt_payment.setFont(new Font("Tahoma", 0, 14));
         txt_payment.setText("jLabel9");
 
-        txt_pay.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        txt_pay.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_payActionPerformed(evt);
-            }
-        });
-        txt_pay.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                txt_payKeyPressed(evt);
-            }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
+        txt_pay.setFont(new Font("Tahoma", 0, 14));
+        txt_pay.addKeyListener(new KeyAdapter() {
+            public void keyReleased(KeyEvent evt) {
                 txt_payKeyReleased(evt);
             }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
+            public void keyTyped(KeyEvent evt) {
                 txt_payKeyTyped(evt);
             }
         });
 
-        txt_change.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt_change.setFont(new Font("Tahoma", 0, 14));
         txt_change.setText(": Rp. 0");
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setFont(new Font("Tahoma", 1, 14));
         jButton1.setText("Selesai");
         jButton1.setEnabled(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
         jButton2.setText("Kembali");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
     }
-    private void txt_payActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_payActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txt_payActionPerformed
 
-    private void txt_payKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_payKeyReleased
+    private void txt_payKeyReleased(KeyEvent evt) {
         int value = 0;
         try{
             money = txt_pay.getText().isEmpty() ? 0 : Integer.parseInt(txt_pay.getText());
@@ -127,28 +119,26 @@ public class payment extends JFrame {
         }finally{
             txt_change.setText(": Rp."+ value);
         }
-    }//GEN-LAST:event_txt_payKeyReleased
+    }
 
-    private void txt_payKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_payKeyTyped
+    private void txt_payKeyTyped(KeyEvent evt) {
         if(uFilter.filterDigit(evt) == false){
             evt.consume();
             getToolkit().beep();
             JOptionPane.showMessageDialog(null,"Masukan Bukan Digit!","Masukan Salah",JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_txt_payKeyTyped
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    // Method untuk button lanjutkan
+    private void jButton1ActionPerformed(ActionEvent evt) {
         order_center.clearOrder();
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
-    private void txt_payKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_payKeyPressed
-
-    }//GEN-LAST:event_txt_payKeyPressed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    // Method untuk button kembali
+    private void jButton2ActionPerformed(ActionEvent evt) {
+        dispose();
+    }
 
     public static void main(String[] args) {
         //JFrame mainFrame = new payment();

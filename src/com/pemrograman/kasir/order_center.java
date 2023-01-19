@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-abstract class order_center {
+abstract class order_center implements Runnable {
     static List<List<Integer>> order = new ArrayList<>(); //untuk menyimpan id menu & jumlah pesanan
     static List<String> description = new ArrayList<>(); //untuk menyimpan deskripsi dari pesanan
 
