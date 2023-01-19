@@ -37,11 +37,11 @@ public class detail_order extends JFrame {
 
         btnLanjut.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnLanjut.setText("Lanjutkan");
-        //btnLanjut.addActionListener(new java.awt.event.ActionListener() {
-        //    public void actionPerformed(java.awt.event.ActionEvent evt) {
-        //        btnLanjutActionPerformed(evt);
-        //    }
-        //});
+        btnLanjut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLanjutActionPerformed(evt);
+            }
+        });
 
         JButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         JButton2.setText("Kembali");
@@ -53,11 +53,11 @@ public class detail_order extends JFrame {
 
     }
 
-    //private void btnLanjutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLanjutActionPerformed
-    //    payment p = new payment(qOrder.totalPayment());
-    //    p.setVisible(true);
-    //    dispose();
-    //}//GEN-LAST:event_btnLanjutActionPerformed
+    private void btnLanjutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLanjutActionPerformed
+        payment p = new payment(qOrder.totalPayment());
+        p.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnLanjutActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.dispose();
