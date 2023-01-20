@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1aefd7bd-ce33-4dfd-81a7-0fb80e307095" name="Changes" comment="Merapikan Class &amp; Menghapus Comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/order_center.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/order_center.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/query_order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/query_order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pemrograman/kasir/add_count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pemrograman/kasir/add_count.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +93,7 @@
       <workItem from="1673524192295" duration="1709000" />
       <workItem from="1674092283725" duration="7703000" />
       <workItem from="1674135867295" duration="6434000" />
+      <workItem from="1674193875839" duration="1677000" />
     </task>
     <task id="LOCAL-00001" summary="Pemrog Mantap">
       <created>1674134547369</created>
@@ -132,11 +132,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="4009db69-52df-49af-801d-dba28f6e1f20">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="4009db69-52df-49af-801d-dba28f6e1f20" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
