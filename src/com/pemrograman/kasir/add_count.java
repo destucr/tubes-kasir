@@ -71,6 +71,13 @@ public class add_count extends JFrame {
     }
 
     public static void main(String[] args) {
+        //JFrame mainFrame = new Choose_Menu();
+        //mainFrame.setVisible(true);
 
+       // java.awt.EventQueue.invokeLater(new Runnable() {
+        //    public void run() {
+        //        new add_count(0).setVisible(true);
+        //    }
+       //});
     }
 }
